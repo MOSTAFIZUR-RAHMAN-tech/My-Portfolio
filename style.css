@@ -1,0 +1,486 @@
+/* #1468ED blue
+#D43100 red
+008C55# green
+#348B88 dark Green
+
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+/*  GENERAL
+===================================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Play', sans-serif;
+    scroll-behavior: smooth !important;
+
+
+}
+
+
+
+
+
+/*  NAVBAR
+===================================*/
+
+
+
+.navbar {
+    background-color: #1468ED !important;
+}
+
+#portfolioNav .container .navbar {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.portfolioNav .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-nav .nav-item .nav-link {
+
+
+    font-size: 17px;
+    font-weight: 400;
+    color: white !important;
+
+}
+
+.navbar-nav .nav-item a {
+
+    text-decoration: none;
+    padding: 10px 15px !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+
+    margin-right: 6px;
+
+
+}
+
+.navbar-nav .nav-item a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #008C55;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+
+}
+
+.navbar-nav .nav-item a:hover:before {
+
+    transform: translateY(0%);
+
+}
+
+.navbar-nav .nav-item a:hover {
+    color: white !important;
+
+
+
+
+}
+
+.nav-item__last:focus span {
+    letter-spacing: 0.5px;
+ 
+    color: #D43100 !important;
+}
+
+/*  INTRODUCTION
+===================================*/
+
+.Introduction .container {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+.Introduction img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.introduction__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #008c55;
+
+
+}
+
+.introduction__details h2,
+.introduction__details h3 {
+    font-weight: 700;
+}
+
+.introduction__button {
+    border: none;
+    padding: 5px 30px;
+    border-radius: 12px;
+    background-color: #1468ED;
+    color: white;
+    letter-spacing: 1PX;
+    position: relative;
+    margin-top: 10px;
+    outline: none !important;
+
+
+}
+
+.introduction__button:before {
+
+    content: "Hire ME !!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #008c55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    border-radius: 12px;
+
+
+
+}
+
+
+
+.introduction__button:focus:before,
+.introduction__button:focus:after {
+    transform: rotateX(0deg);
+
+
+}
+
+
+.introduction__button:hover {
+    letter-spacing: 1.1px;
+}
+
+
+
+.introduction__button:after {
+
+    content: "Hire ME !!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #D43100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+    border-radius: 12px;
+
+
+
+}
+
+
+/*  GENERAL
+===================================*/
+
+#mySkills {
+    text-align: center;
+
+
+
+}
+
+#mySkills .container {
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+#mySkills .mySkills__title h2 {
+    color: #348B88;
+    font-weight: 700 !important;
+    margin-bottom: 40px;
+}
+
+.mySkills__title h5 {
+    color: #1468ED;
+
+}
+
+.mySkills__all img,
+.mySkills__all div {
+
+    margin-top: 30px;
+
+}
+
+.mySkills__description {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*  GENERAL
+===================================*/
+
+#contact {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    transition: all 2s;
+}
+
+.contact__icon,
+.contact__iconTitle,
+.contact__iconDescription {
+    margin-top: 20px;
+}
+
+.contact__iconTitle h6 {
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17.5px;
+}
+
+.contact__icon {
+    font-size: 50px;
+    color: #008C55;
+
+}
+
+.contact__icon:hover {
+    color: #1468ED;
+}
+
+#contact .row {
+    margin-top: 40px !important;
+}
+
+
+
+
+
+.contact__iconDescription {
+    letter-spacing: -0.75px;
+
+}
+
+/*  FOOTER
+===================================*/
+
+#footer {
+    background-color: #1468ED;
+    padding-top: 0.7px;
+    padding-bottom: 20px;
+}
+
+.footerArea {
+    margin-top: 30px;
+
+}
+
+
+.footer__links a {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+
+.footer__fonts {
+    text-align: right;
+    margin-right: 0px !important;
+
+}
+
+
+.footer__links a:hover {
+
+    color: #D43100;
+    
+}
+
+.footer__links i {
+    margin-right: 10px;
+    color: white;
+}
+
+
+.footer__links i:hover {
+    color: #008C55 ;
+}
+
+.footer__links {
+    display: block;
+}
+
+.footer__links  .footer__links__social{
+    display: inline !important;
+}
+
+/*  MEDIA QUERIES
+===================================*/
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .portfolioNav .container,
+    .Introduction .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 13px;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+
+    .introduction__details h2,
+    .introduction__details h3
+        {
+        font-size: 40px !important;
+    }
+
+    .introduction__button {
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+
+    .introduction__details {
+        margin-top: 50px;
+    }
+
+    .introduction__details .introduction__button {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+
+    .navbar-nav .nav-item .nav-link {
+
+        margin-right: 30px;
+        font-size: 20px;
+
+    }
+
+    .contact__iconDescription p {
+        margin: 0px 80px 0px 80px !important;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+    .navbar-nav .nav-item .nav-link {
+
+        margin-right: 25px;
+        font-size: 20px;
+
+    }
+
+    .navbar-nav .nav-item a {
+
+        text-decoration: none;
+        padding: 10px 50px !important;
+
+    }
+
+
+    .Introduction img {
+        height: 500px;
+    }
+
+
+    .footer__fonts i {
+        margin-top: 12px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .footer__links {
+        text-align: center;
+    }
+
+}
